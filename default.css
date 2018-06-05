@@ -1,0 +1,139 @@
+body
+{
+    background-color: #e7e4e4;
+}
+.chart-container {
+width: 55%;
+    height: 350px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.pie-chart-container {
+	width : 360px;
+	height : 360px;
+	float : left;
+}
+h1
+{
+  color: #575757;
+    top: 35px;
+    left: 30px;
+    position: absolute;
+}
+h2
+{
+        top: 155px;
+    left: 222px;
+    color: #726969;
+    position: absolute;
+}
+.select3
+{
+    -webkit-appearance : none;
+    -moz-appearance : none;
+    -o-appearance : none;
+    -ms-appearance : none;
+    appearance : none;
+    
+   display: block;
+    top: 35px;
+    right: 80px;
+    position: absolute;
+    margin: 30px 0px;
+    padding: 7px 40px 7px 10px;
+    color: dimgrey;
+    border-radius: 4px;
+    width: 100px;
+}
+#comp
+{
+    background-color: #e4e741;
+    border-bottom: 3px solid lightgrey;
+    display: block;
+    width: 55px;
+    text-align: center;
+    padding: 10px 8px 8px 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+.center
+{
+    position: absolute;
+    top: 180px;
+    left: 66%;
+    width: 338px;
+    border: 1px solid #c6bebe;
+    background: white;
+    height: 90px;
+}
+#entername
+{
+    display: block;
+    top: -7px;
+    right: 125px;
+    position: absolute;
+    margin: 30px 0px;
+    padding: 8px 20px 7px 13px;
+    color: dimgrey;
+    border-radius: 4px;
+    width: 150px;
+}
+#edit
+{
+height: 383px;
+    width: 338px;
+    background-color: white;
+    top: 271px;
+    right: 89px;
+    position: absolute;
+    border: 1px solid #c6bebe;
+}
+#table
+{
+    right: 25px;
+    top: 10px;
+}
+#dynamic_field
+{
+        top: 6px;
+    right: 95px;
+    position: absolute;
+}
+.form-control_name_list
+{   
+        position: inherit;
+    right: -65px;
+    margin: 18px;
+    padding: 5px 24px 6px 15px;
+    color: dimgrey;
+    border-radius: 4px;
+}
+.btn_btn-danger
+{
+    padding: 2px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px
+}
+p
+{
+    font-size: 20px;
+        right: -65px;
+    width: 120px;
+    border: 0.5px solid black;
+    padding: 8px 22px 7px 13px;
+    color: dimgrey;
+    border-radius: 4px;
+}

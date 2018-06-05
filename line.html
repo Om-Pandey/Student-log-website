@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChartJS - Line</title>
+    
+    <link href="css/default.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Student Comparison</h1>
+
+	<div class="chart-container">
+		<canvas id="line-chartcanvas"></canvas>
+	</div>
+    <select class = "select3">
+        <option>-Select-</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        </select>
+        <div class ="center">
+      <a href= "#" id="comp">ADD</a>   
+        <script src="waves.js"></script>
+        <script>
+        Waves.attach('a');
+            Waves.init();
+        </script>
+        <input type="text" id="entername" placeholder="Your Name" list="datalist">
+            <datalist id="datalist">
+            <option value="Student 1"></option>
+            <option value="Student 2"></option>
+                <option value="Student 3"></option>
+                <option value="Student 4"></option>
+            </datalist>
+        </div>
+    <div id= "edit">
+    <div id= "student">
+        <form name="add_name" id="add_name">  
+                          <div class="table-responsive">  
+                               <table class="table table-bordered" id="dynamic_field">  
+                                    <tr>  
+                                        <div id="acc">
+                                            <td><p class="form-control_name_list">Student  1</p></td>  
+                                         <td><button type="button" name="add" id="add" class="btn_btn-danger">X</button></td>
+                                            </div>
+                                    </tr>  
+                               </table>  
+                          </div>  
+                     </form>  
+        </div>
+	<!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/line.js"></script>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){  
+      var i=1;  
+      $('#comp').click(function(){  
+           i++; 
+          var std_name = document.getElementById("entername").value;
+          
+           $('#dynamic_field').append('<tr id="row'+i+'"><td><p value = "'+std_name+'" class="form-control_name_list">'+std_name+'</p></td><td><button type="button" name="remove" id="'+i+'" class="btn_btn-danger btn_remove">X</button></td></tr>');
+          
+      });  
+      $(document).on('click', '.btn_remove', function(){  
+           var button_id = $(this).attr("id");   
+           $('#row'+button_id+'').remove();  
+      });
+        
+      });    
+    </script>
+</body>
+</html>
