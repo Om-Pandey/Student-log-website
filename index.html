@@ -1,84 +1,72 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type ="text/css" href ="waves.css">
-</head>
-<body>
-    <table>
-        <tr>
-            <th>S.No</th>
-            <th>Name</th>
-            <th>E-mail</th>
-            <th>Class</th>
-            <th>Marks</th>
-            <th>Attendance</th>
-            <th>Phone</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Abc </td>
-            <td>abc@gmail.com</td>
-            <td>X B</td>
-            <td>92</td>
-            <td>86</td>
-            <td>8946352345</td>
-            <td>Studying</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Def </td>
-            <td>def@gmail.com</td>
-            <td>XII A</td>
-            <td>98</td>
-            <td>76</td>
-            <td>9856432189</td>
-            <td>Studying</td>
-        </tr>
-    </table>    
-     <div class ="center">
-    <div class = "pulse" >Compare</div></div>
-    <div class = "button">
-    <a href="#">FILTERS</a>   
+    <title>
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <link href="waves.css" rel="stylesheet"></head>
+    <body>
+    <h1>Class : X 'B'</h1>
+    <h1>Science FA -'I' </h1>
+    <div id="marklist">
+        <h2 style="padding: 10px 10px 0px 14px;">Mark List</h2>
+        <div class ="center">
+      <a href="#" id="comp">UPDATE</a>   
         <script src="waves.js"></script>
         <script>
         Waves.attach('a');
             Waves.init();
-        </script>
+        </script> 
         </div>
-    <select class = "select1">
-        <option>-Select-</option>
-        <option>X</option>
-        <option>XI</option>
-        <option>XII</option>
-        </select>
-    <select class = "select2">
-        <option>-Select-</option>
-        <option>Student</option>
-        <option>Un-employed</option>
-        <option>Graduated</option>
-        </select>
-    <select class = "select3">
-        <option>-Select-</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        </select>
-        <h1>Student Log</h1>
-    <input type="number" class="input1">
-    <input type="number" class="input2">
-    <input type="number" class="input3">
-    <input type="number" class="input4">
-    <h2 id="filter">Filters</h2>
-    <h3 id ="status">Status</h3>
-    <h3 id="class">Class</h3>
-    <h3 id="marks">Marks between</h3>
-    <h3 id="and">and</h3>
-    <h3 id ="attendance">Attendance between</h3>
-    <h3 id ="and1">and</h3>
-    <h3 id = "year">Year :</h3>
-</body>
+        <div id="student">
+         <table>
+             <tr id="head"><th>Roll no.</th>
+                <th>Name</th>
+                <th>Marks(100)</th></tr>
+             <tr>
+             <td>1</td>
+             <td>Student 1</td>
+                 <td><input type="text" class="studentmarks"></td>
+             </tr>
+             
+             <tr>
+             <td>2</td>
+             <td>Student 2</td>
+                 <td><input type="text" class="studentmarks"></td>
+             </tr>
+             
+             <tr>
+             <td>3</td>
+             <td>Student 3</td>
+                 <td><input type="text" class="studentmarks"></td>
+             </tr>
+            </table>
+        </div>
+        </div>
+        <div id="progress">
+            <div id="progress1">
+            <div class="chart" data-percent="73">73% <h2>Attendance</h2></div>
+                </div><div id="progress1">
+            <div class="chart" data-percent="90">90% <h2>Passed</h2></div>
+                    </div><div id="progress1">
+            <div class="chart" data-percent="60">60% <h2>Average</h2></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="jquery.easypiechart.js"></script>
+            <script>
+    $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+        });
+    });
+</script>
+        </div>
+        </div>
+        <div id="details">
+        <h3>Date :<input type="date" class="date"> </h3>
+            <h3>Total :    <input type="text" class="studentmarks1"></h3>
+            <h3>Present :   <input type="text" class="studentmarks1"></h3>
+            <h3>Weightage :    <input type="text" class="studentmarks1"></h3>
+            <h3>Maximum :    <input type="text" class="studentmarks1"> </h3>
+            <h3>Maximum :        <input type="text" class="studentmarks1"> </h3>
+        </div>
+    </body>
 </html>
-
